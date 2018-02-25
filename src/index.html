@@ -1,0 +1,137 @@
+---
+layout: default
+
+wrapper-class: landing
+
+carousel: 
+  - img: carousel-01.jpg
+    img-alt: carousel-01
+  - img: carousel-02.jpg
+    img-alt: carousel-01
+  - img: carousel-03.jpg
+    img-alt: carousel-01
+  - img: carousel-04.jpg
+    img-alt: carousel-01
+  - img: carousel-05.png
+    img-alt: carousel-01
+  
+
+thumbs: 
+  - img: thumb-03
+    link: '#0'
+    title: something
+    desc: something
+  - img: thumb-05
+    link: '#0'
+    title: something
+    desc: something
+  - img: thumb-07
+    link: '#0'
+    title: something
+    desc: something
+  - img: thumb-12
+    link: '#0'
+    title: something
+    desc: something
+  - img: thumb-13
+    link: '#0'
+    title: something
+    desc: something
+  - img: thumb-14
+    link: '#0'
+    title: something
+    desc: something
+blogposts: 
+  - img: blog-01.jpg
+    link: '#0'
+    title: something
+    desc: something
+  - img: blog-02.png
+    link: '#0'
+    title: something
+    desc: something
+  - img: blog-03.png
+    link: '#0'
+    title: something
+    desc: something
+  - img: blog-04.png
+    link: '#0'
+    title: something
+    desc: something
+  
+js: index.js
+---
+
+{% include carousel-full.html data=page.carousel %}
+
+<section class="accented">
+  <div class="container">
+    <div class="row"> 
+      <div class="col-md-4 offset-md-1">
+        <h2 class="title" >Who we are</h2>
+      </div>
+      <div class="col-md-6">
+        <div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat orci ac lacinia dictum. Maecenas ac scelerisque felis,
+          in sodales ipsum. Suspendisse enim lectus, vehicula ut ante ac, hendrerit aliquam eros.
+        </div>
+        <div class="link">
+          <a class="anchor-upperline" href="#0">Read More...</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+</section>
+
+<section class="portfolios">
+  <div class="container">
+    <h2 class="title text-center section-title">Latest Works</h2>
+    <div class="row"> 
+      {% for thumb in page.thumbs %}
+        <div class="col-md-4">  
+          <a class="portfolio-thumb" href="{{thumb.link}}">
+            <img src="img/portfolio/thumbs/{{thumb.img}}.png" alt="" class="img-fluid">  
+          </a>
+        </div>
+      {% endfor %}
+      
+    </div>
+    <div class="link text-center">
+      <a class="anchor-underline" href="#0">Read More...</a> 
+    </div>
+  </div>
+</section>
+
+<section class="blogposts">
+  <div class="container">
+    <h2 class="title text-center section-title">What's up?</h2>
+    {% for thumb in page.blogposts %}
+    <div class="row blogpost">
+      <div class="col-md-6">
+        <div class="blog-desc-container">
+          <div class="meta">
+            Category <br>
+            <span>Monday, 10/ 09/ 2017</span>
+          </div>
+          <div class="body">
+            <div class="blog-title">
+              Lorem ipsum dolor sit amet
+            </div>
+            <div class="short-desc">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat orci ac lacinia dictum. Maecenas ac scelerisque felis, in sodales ipsum. Suspendisse enim lectus, vehicula ut ante ac, hendrerit aliquam eros.
+            </div>
+            
+          </div>
+          <div class="link">
+            <a class="anchor-upperline" href="#0">Read More...</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="img/blogpost/thumbs/{{thumb.img}}" alt="" class="img-fluid">
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+</section>

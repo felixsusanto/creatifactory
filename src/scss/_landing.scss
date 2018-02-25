@@ -1,0 +1,108 @@
+.anchor-upperline {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display:inline-block;
+  border-top: 3px solid #231F20; 
+  color: #231F20;
+  &:hover, &:focus {
+    color: #231F20;
+    text-decoration: none;
+  }
+}
+
+.anchor-underline {
+  @extend .anchor-upperline;
+  border-top: none; 
+  border-bottom: 3px solid #231F20; 
+}
+
+.full-carousel {
+  height: 50vh;
+  @media(min-width: 992px) {
+    height: 90vh;
+  }
+  .slick-list, .slick-track, .carousel-item {
+    height: 100%;
+  }
+  .carousel-item {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+  }
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 25px;
+    z-index: 1;
+  }
+}
+
+.landing {
+  .accented {
+    background-color: #231F20;
+    color: #fff;
+    font-size: 1.66rem;
+    .link {
+      margin-top: 50px;
+      a {
+        color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+  > section {
+    padding: 100px 0;
+    .title.section-title {
+      padding-bottom: 60px; 
+    }
+    @media(min-width: 1200px) {
+      padding: 200px 0;
+      .title {
+        font-size: 3.44rem;
+        &.section-title {
+          padding-bottom: 120px;
+        }
+      }
+    }
+  }
+
+  .portfolios {
+    .portfolio-thumb {
+      display: block;
+      margin: 15px 0;
+      text-align: center;
+    }
+    .link {
+      margin-top: 30px;
+    }
+  }
+  
+
+  .blogposts {
+    .blog-title {
+      font-size: 2.2rem;
+      font-weight: bold;
+      margin: 1rem 0;
+    }
+    .blogpost + .blogpost {
+      margin-top: 30px;
+    }
+    .blog-desc-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      .body {
+        flex: 1;
+      }
+      .meta > span {
+        color: #A7A9AC;
+      }
+    }
+    .link {
+      padding-bottom: 2rem;
+      
+    }
+  }
+}
