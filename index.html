@@ -19,28 +19,29 @@ carousel:
 thumbs: 
   - img: thumb-03
     link: '#0'
-    title: something
-    desc: something
+    title: Sushi Time
+    desc: Lorem ipsum dolore
   - img: thumb-05
     link: '#0'
-    title: something
-    desc: something
+    title: Fris fresh market
+    desc: Lorem ipsum dolore
   - img: thumb-07
     link: '#0'
-    title: something
-    desc: something
+    title: Mahakarya
+    desc: Lorem ipsum dolore
   - img: thumb-12
     link: '#0'
-    title: something
-    desc: something
+    title: Sutrado Kabel
+    desc: Lorem ipsum dolore
   - img: thumb-13
     link: '#0'
-    title: something
-    desc: something
+    title: Darmawan
+    desc: Lorem ipsum dolore
   - img: thumb-14
     link: '#0'
-    title: something
-    desc: something
+    title: Gayo Coffee
+    desc: Lorem ipsum dolore
+
 blogposts: 
   - img: blog-01.jpg
     link: '#0'
@@ -67,10 +68,10 @@ js: index.js
 <section class="accented">
   <div class="container">
     <div class="row"> 
-      <div class="col-md-4 offset-md-1">
+      <div class="col-lg-4 offset-lg-1">
         <h2 class="title" >Who we are</h2>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam feugiat orci ac lacinia dictum. Maecenas ac scelerisque felis,
           in sodales ipsum. Suspendisse enim lectus, vehicula ut ante ac, hendrerit aliquam eros.
@@ -83,26 +84,30 @@ js: index.js
   </div> 
 </section>
 
-<section class="portfolios">
+<section class="portfolios white">
   <div class="container">
     <h2 class="title text-center section-title">Latest Works</h2>
     <div class="row"> 
       {% for thumb in page.thumbs %}
         <div class="col-md-4">  
           <a class="portfolio-thumb" href="{{thumb.link}}">
-            <img src="img/portfolio/thumbs/{{thumb.img}}.png" alt="" class="img-fluid">  
+            <img src="img/portfolio/thumbs/{{thumb.img}}.png" alt="" class="img-fluid">
+            <div class="overlay">
+              <div class="overlay-title">{{thumb.title}}</div>
+              <div class="overlay-desc">{{thumb.desc}}</div>
+            </div>
           </a>
         </div>
       {% endfor %}
       
     </div>
     <div class="link text-center">
-      <a class="anchor-underline" href="#0">Read More...</a> 
+      <a class="anchor-underline" href="#0">More...</a> 
     </div>
   </div>
 </section>
 
-<section class="blogposts">
+<section class="blogposts white">
   <div class="container">
     <h2 class="title text-center section-title">What's up?</h2>
     {% for thumb in page.blogposts %}

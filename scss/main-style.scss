@@ -5,9 +5,12 @@ $font-gotham-baseurl: '../fonts/gotham/';
 
 html, body {
   font-family: 'Gotham', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
 } 
 @media (min-width: 1200px){
+  html, body {
+    font-size: 18px;
+  }
   .container {
     max-width: 1440px;
   }

@@ -1,0 +1,89 @@
+.anchor-upperline, .anchor-underline {
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: inline-block;
+  border-top: 3px solid #231F20;
+  color: #231F20; }
+  .anchor-upperline:hover, .anchor-underline:hover, .anchor-upperline:focus, .anchor-underline:focus {
+    color: #231F20;
+    text-decoration: none; }
+
+.anchor-underline {
+  border-top: none;
+  border-bottom: 3px solid #231F20; }
+
+.full-carousel {
+  height: 50vh; }
+  @media (min-width: 992px) {
+    .full-carousel {
+      height: 90vh; } }
+  .full-carousel .slick-list, .full-carousel .slick-track, .full-carousel .carousel-item {
+    height: 100%; }
+  .full-carousel .carousel-item {
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #ddd; }
+  .full-carousel .slick-next {
+    right: 25px; }
+  .full-carousel .slick-prev {
+    left: 25px;
+    z-index: 1; }
+
+.landing .accented {
+  background-color: #231F20;
+  color: #fff;
+  font-size: 1.66rem; }
+  .landing .accented .link {
+    margin-top: 50px; }
+    .landing .accented .link a {
+      color: #fff;
+      border-color: #fff; }
+
+.landing > section {
+  padding: 100px 0; }
+  .landing > section .title.section-title {
+    padding-bottom: 60px; }
+  @media (min-width: 1200px) {
+    .landing > section {
+      padding: 200px 0; }
+      .landing > section .title {
+        font-size: 3.44rem; }
+        .landing > section .title.section-title {
+          padding-bottom: 120px; } }
+
+.landing .portfolios .portfolio-thumb {
+  display: block;
+  margin: 15px 0;
+  text-align: center; }
+
+.landing .portfolios .link {
+  margin-top: 30px; }
+
+.landing .blogposts .blog-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 1rem 0; }
+
+.landing .blogposts .blogpost + .blogpost {
+  margin-top: 30px; }
+
+.landing .blogposts .blog-desc-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .landing .blogposts .blog-desc-container .body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .landing .blogposts .blog-desc-container .meta > span {
+    color: #A7A9AC; }
+
+.landing .blogposts .link {
+  padding-top: 1rem;
+  padding-bottom: 2rem; }

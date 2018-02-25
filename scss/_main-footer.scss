@@ -33,8 +33,15 @@ body {
   .row-wrapper {
     display: flex;
     flex-direction: column;
-    .footer-flex {
+    .logo-container, .footer-nav {
       flex: 1;
+    }
+    .footer-flex {
+      flex: 2;
+      padding-bottom: 1rem;
+      + .footer-flex {
+        padding-top: 1rem;
+      }
     }
   }
   .logo-container {
@@ -71,6 +78,9 @@ body {
     padding: $pad-desktop;
     .row-wrapper {
       flex-direction: row;
+      .footer-flex + .footer-flex {
+        padding-top: 0;
+      }
     }
     .logo-container {
       text-align: left;
