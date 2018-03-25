@@ -1,0 +1,5 @@
+.side-menu ul {
+  list-style-type: none;
+  padding: 0; }
+  .side-menu ul > li {
+    text-align: center; }

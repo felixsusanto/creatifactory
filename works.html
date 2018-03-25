@@ -1,0 +1,80 @@
+---
+layout: default
+
+wrapper-class: landing
+
+thumbs: 
+  - img: thumb-03
+    link: '#0'
+    title: Sushi Time
+    desc: Lorem ipsum dolore
+  - img: thumb-05
+    link: '#0'
+    title: Fris fresh market
+    desc: Lorem ipsum dolore
+  - img: thumb-07
+    link: '#0'
+    title: Mahakarya
+    desc: Lorem ipsum dolore
+  - img: thumb-12
+    link: '#0'
+    title: Sutrado Kabel
+    desc: Lorem ipsum dolore
+  - img: thumb-13
+    link: '#0'
+    title: Darmawan
+    desc: Lorem ipsum dolore
+  - img: thumb-14
+    link: '#0'
+    title: Gayo Coffee
+    desc: Lorem ipsum dolore
+  - img: thumb-03
+    link: '#0'
+    title: Sushi Time
+    desc: Lorem ipsum dolore
+  - img: thumb-05
+    link: '#0'
+    title: Fris fresh market
+    desc: Lorem ipsum dolore
+  - img: thumb-07
+    link: '#0'
+    title: Mahakarya
+    desc: Lorem ipsum dolore
+  - img: thumb-12
+    link: '#0'
+    title: Sutrado Kabel
+    desc: Lorem ipsum dolore
+  - img: thumb-13
+    link: '#0'
+    title: Darmawan
+    desc: Lorem ipsum dolore
+  - img: thumb-14
+    link: '#0'
+    title: Gayo Coffee
+    desc: Lorem ipsum dolore
+
+js: index.js
+---
+
+<section class="portfolios white">
+  <div class="container">
+    <h2 class="title text-center section-title">Latest Works</h2>
+    <div class="row"> 
+      {% for thumb in page.thumbs %}
+        <div class="col-md-4">  
+          <a class="portfolio-thumb" href="{{thumb.link}}">
+            <img src="img/portfolio/thumbs/{{thumb.img}}.png" alt="" class="img-fluid">
+            <div class="overlay">
+              <div class="overlay-title">{{thumb.title}}</div>
+              <div class="overlay-desc">{{thumb.desc}}</div>
+            </div>
+          </a>
+        </div>
+      {% endfor %}
+      
+    </div>
+    <div class="link text-center">
+      <a class="anchor-underline" href="#0">More...</a> 
+    </div>
+  </div>
+</section>

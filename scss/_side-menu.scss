@@ -1,0 +1,15 @@
+.side-menu {
+  .text-muted {
+    text-align: center;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    > li {
+      text-align: center;
+      .active {
+        color: red!important; 
+      }
+    }
+  }
+}

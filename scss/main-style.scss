@@ -2,6 +2,7 @@ $font-gotham-baseurl: '../fonts/gotham/';
 
 @import 'main-footer';
 @import '../fonts/gotham/stylesheet';
+@import 'side-menu';
 
 html, body {
   font-family: 'Gotham', sans-serif;

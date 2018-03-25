@@ -1,0 +1,9 @@
+<aside class="side-menu collapse" id="side-menu" data-parent="#main-nav">
+  <h2 class="text-center">What we've been doing</h2>
+  <div class="text-muted"> Category <i class="fal fa-caret-down"></i></div>
+  <ul>
+    {% for item in site.data.nav %}
+    <li><a href="{{item.href}}" class="text-muted {%if forloop.first%}active{%endif%}">{{item.label}}</a></li>
+    {% endfor %}
+  </ul>
+</aside>

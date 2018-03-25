@@ -1,10 +1,13 @@
-<nav class="main-nav">
+<nav class="main-nav" id="main-nav">
   <div class="row-wrapper">
     <div class="logo-container">
-      <img src="img/creatif-white.svg" alt="">
+      <img src="img/creatif-white.svg" class="white" alt="">
+      <img src="img/creatif-blk.svg" class="black" alt="">
     </div>
     <div class="menu-wrapper">
-      <a href="#"><i class="fas fa-bars"></i></a>
+      <a href="#" data-toggle="collapse" data-target="#side-menu"><i class="fas fa-bars"></i></a>
     </div>
   </div>
+  {% include side-menu.html %}
+  
 </nav> 
